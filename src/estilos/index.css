@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amarillo: #DFCC0F;
+  --color-carbon: #1E1F1F;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-carbon text-white font-display antialiased;
+  }
+}
+
+@layer utilities {
+  .contenedor {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+  .titulo-seccion {
+    @apply text-3xl sm:text-4xl font-extrabold uppercase tracking-tight text-white;
+  }
+  .titulo-seccion .resaltado {
+    @apply text-amarillo;
+  }
+}
