@@ -1,13 +1,16 @@
-import comunidad1 from '../../recursos/imagenes/comunidad/comunidad-default-1.jpg'
-import comunidad2 from '../../recursos/imagenes/comunidad/comunidad-default-2.jpg'
-import comunidad3 from '../../recursos/imagenes/comunidad/comunidad-default-3.jpg'
+import grupoPostClase from '../../recursos/imagenes/comunidad/comunidad-grupo-post-clase.jpg'
+import claseGrupal from '../../recursos/imagenes/comunidad/comunidad-clase-grupal.jpg'
+import bandaElastica from '../../recursos/imagenes/comunidad/comunidad-banda-elastica.jpg'
+import sledEntrenador from '../../recursos/imagenes/comunidad/comunidad-sled-entrenador.jpg'
+import chicosPulgar from '../../recursos/imagenes/comunidad/comunidad-chicos-pulgar.jpg'
 
-// Fotos default de comunidad (placeholder) — reemplazar por fotos reales de socios de FitClub
-// entrenando juntos apenas el gym las mande.
+// Fotos reales de socios de FitClub entrenando (reemplazan las de muestra que había antes).
 const fotos = [
-  { src: comunidad1, alt: 'Grupo de socios chocando las manos después de entrenar' },
-  { src: comunidad2, alt: 'Grupo corriendo juntos al aire libre' },
-  { src: comunidad3, alt: 'Socios compartiendo un café después de entrenar' },
+  { src: grupoPostClase, alt: 'Grupo de socios de FitClub charlando después de entrenar' },
+  { src: claseGrupal, alt: 'Clase grupal con la coach guiando ejercicios de zancada' },
+  { src: sledEntrenador, alt: 'Socio entrenando con el trineo, guiado por su entrenador' },
+  { src: bandaElastica, alt: 'Socia entrenando con banda elástica' },
+  { src: chicosPulgar, alt: 'Dos socios jóvenes de FitClub sonriendo' },
 ]
 
 export default function Comunidad() {
@@ -37,6 +40,8 @@ export default function Comunidad() {
           />
           <img src={fotos[1].src} alt={fotos[1].alt} className="h-48 w-full rounded-2xl object-cover" />
           <img src={fotos[2].src} alt={fotos[2].alt} className="h-48 w-full rounded-2xl object-cover" />
+          <img src={fotos[3].src} alt={fotos[3].alt} className="h-40 w-full rounded-2xl object-cover" />
+          <img src={fotos[4].src} alt={fotos[4].alt} className="h-40 w-full rounded-2xl object-cover" />
         </div>
       </div>
     </section>
