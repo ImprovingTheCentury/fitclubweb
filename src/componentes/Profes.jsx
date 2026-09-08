@@ -8,11 +8,10 @@ export default function Profes() {
           Los <span className="resaltado">profes</span>
         </h2>
         <p className="mb-12 max-w-2xl text-white/70">
-          El equipo que te acompaña en cada clase. (Nombres y videos de muestra — se actualizan
-          cuando FitClub nos pase los definitivos.)
+          El equipo que te acompaña en cada clase. (Los videos se suman a medida que nos los pasan.)
         </p>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {profes.map((profe) => (
             <article key={profe.id} className="overflow-hidden rounded-2xl bg-white/5">
               <div className="relative aspect-[3/4]">
